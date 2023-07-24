@@ -1,0 +1,122 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bbe6e4;
+}
+
+p {
+  margin: 0;
+}
+
+#root {
+  position: relative;
+}
+
+div.select {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+div.select::after {
+  background-image: url("data:image/svg+xml;utf8,<svg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.37823 9.75281C6.1765 10.8589 7.8235 10.8589 8.62177 9.75281L13.3722 3.17041C14.3268 1.84768 13.3817 0 11.7504 0H2.24956C0.618348 0 -0.326804 1.84768 0.627793 3.17041L5.37823 9.75281Z' fill='black' fill-opacity='0.8'/></svg>");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  z-index: 1;
+}
+
+select {
+  appearance: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 60px;
+  height: 50px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.pokemon {
+  background-color: #fff;
+  padding: 40px 10px 50px;
+  border-radius: 10px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.details {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+
+.details img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(187 230 228 / 20%);
+  object-fit: cover;
+  width: 100%;
+  border: 4px solid #00000078;
+}
+
+.details h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.footerButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.btn {
+  background: #7d70ba;
+  border: 0 none;
+  padding: 1em;
+  border-radius: 5px;
+  color: #fff;
+  max-width: 192px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+}
