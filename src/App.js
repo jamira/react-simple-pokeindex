@@ -7,7 +7,7 @@ import {
   getPokemonList,
   getPokemonDescription,
   getPokemonSpriteUrl,
-} from '../api/utils';
+} from './api/utils';
 import debounce from 'lodash/debounce';
 
 export default function App() {
